@@ -3,9 +3,11 @@ package models
 
 import "errors"
 
-var(
+var (
 	// ErrMemberNoExist 用户不存在.
 	ErrMemberNoExist = errors.New("用户不存在")
+	// ErrMemberNoExist 用户不存在.
+	ErrMemberIsExist = errors.New("用户已经存在")
 	// ErrorMemberPasswordError 密码错误.
 	ErrorMemberPasswordError = errors.New("用户密码错误")
 	// ErrServerAlreadyExist 指定的服务已存在.
